@@ -24,3 +24,8 @@ Workflow: (1) identify files and time slices, (2) decide on strategy (all data v
 (2) Percentiles and extremes -- for each variable & experiment group.
 
 
+Python implementation: https://github.com/CamDavidsonPilon/tdigest/blob/master/tdigest/tdigest.py 
+
+Perhaps adapt algorithm: set ranges, add data in ranges and track mean, add new ranges and merge as required. 
+Mergiing multiple digests and/or estimating percentiles from a digest collection: assume uniform distribution within each bin.
+Could also accumulate moments but requires more up front calculation .. for greater precision and perhaps some measure of merging.
